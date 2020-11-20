@@ -1,0 +1,14 @@
+{
+  "name": "todomvc-javascript-react",
+  "version": "1.0.0",
+  "description": "TodoMVC",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "todomvc",
+    "todomvc-backend",
+    "todomvc-contract",
+    "todomvc-frontend"
+  ]
+}
