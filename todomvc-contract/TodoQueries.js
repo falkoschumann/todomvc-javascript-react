@@ -2,10 +2,30 @@
 
 import TodoMessageTypes from "./TodoMessageTypes";
 
-export function todoListQuery() {
-  return { type: TodoMessageTypes.TODO_LIST_QUERY };
-}
+const TodoQueries = {
+  allTodosQuery: () => {
+    return { type: TodoMessageTypes.ALL_TODOS_QUERY };
+  },
 
-export function todoListQueryResult(todos) {
-  return { todos };
-}
+  allTodosQueryResult: (todos) => {
+    return { todos };
+  },
+
+  activeTodosQuery: () => {
+    return { type: TodoMessageTypes.ACTIVE_TODOS_QUERY };
+  },
+
+  activeTodosQueryResult: (todos) => {
+    return { todos };
+  },
+
+  completedTodosQuery: () => {
+    return { type: TodoMessageTypes.COMPLETED_TODOS_QUERY };
+  },
+
+  completedTodosQueryResult: (todos) => {
+    return { todos };
+  },
+};
+
+export default TodoQueries;

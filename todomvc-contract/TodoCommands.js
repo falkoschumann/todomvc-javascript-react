@@ -16,7 +16,7 @@ const TodoCommmands = {
   },
 
   toggleAll: () => {
-    return { type: TodoMessageTypes.TOGGLE_ALL_COMMAND, completed };
+    return { type: TodoMessageTypes.TOGGLE_ALL_COMMAND };
   },
 
   destroy: (id) => {
